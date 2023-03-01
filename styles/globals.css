@@ -1,7 +1,5 @@
-@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@200;300;400;500;600;700&display=swap');
-:root {
-  --font-primary: 'Montserrat', sans-serif;
-}
+@import url('https://fonts.cdnfonts.com/css/montserrat');
+@import url('https://fonts.cdnfonts.com/css/lufga');
 
 * {
   box-sizing: border-box;

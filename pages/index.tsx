@@ -1,3 +1,4 @@
+import Enhanced from '@/components/UI/Enhanced';
 import Hero from '@/components/UI/Hero';
 import Navbar from '@/components/UI/Navbar';
 import ProductDisp from '@/components/UI/ProductDisp';
@@ -25,6 +26,7 @@ export default function Home() {
         </Section>
         <ProductDisp />
         <Works />
+        <Enhanced />
       </main>
     </>
   );

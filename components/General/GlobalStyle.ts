@@ -36,5 +36,6 @@ export const GlobalStyle = createGlobalStyle`
   --color-primary: #000000;
   --color-secondary: #FFFFFF;
   --color-tertiary: #1E1E1E;
+  --color-orange: #F16B4D;
 }
 `;

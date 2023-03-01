@@ -73,10 +73,19 @@ const Nav = styled.nav`
     li {
       a {
         font-family: var(--font-family-lufga);
-        font-weight: var(--font-weight-sm);
+        font-weight: var(--font-weight-normal);
         font-size: var(--font-size-md);
         line-height: var(--font-line-height-xl);
         color: var(--color-primary);
+        transition: all 0.2s ease-in-out;
+      }
+
+      &:hover {
+        a {
+          color: var(--color-secondary);
+          padding: 0 0 5px 0;
+          border-bottom: 2px solid var(--color-secondary);
+        }
       }
     }
   }
@@ -119,7 +128,7 @@ const Button = styled.button`
   background: var(--color-secondary);
   border: 2px solid var(--color-tertiary);
   font-family: var(--font-family-lufga);
-  font-weight: var(--font-weight-sm);
+  font-weight: var(--font-weight-normal);
   font-size: var(--font-size-md);
   line-height: var(--font-line-height-xl);
   color: var(--color-tertiary);

@@ -1,5 +1,6 @@
 import Hero from '@/components/UI/Hero';
 import Navbar from '@/components/UI/Navbar';
+import ProductDisp from '@/components/UI/ProductDisp';
 import Head from 'next/head';
 import styled from 'styled-components';
 
@@ -21,6 +22,7 @@ export default function Home() {
           <Navbar />
           <Hero />
         </Section>
+        <ProductDisp />
       </main>
     </>
   );
@@ -28,5 +30,4 @@ export default function Home() {
 
 const Section = styled.section`
   background: #87ceeb;
-  min-height: 100vh;
 `;

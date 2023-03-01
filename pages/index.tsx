@@ -1,6 +1,7 @@
 import Hero from '@/components/UI/Hero';
 import Navbar from '@/components/UI/Navbar';
 import ProductDisp from '@/components/UI/ProductDisp';
+import Works from '@/components/UI/Works';
 import Head from 'next/head';
 import styled from 'styled-components';
 
@@ -23,6 +24,7 @@ export default function Home() {
           <Hero />
         </Section>
         <ProductDisp />
+        <Works />
       </main>
     </>
   );

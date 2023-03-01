@@ -38,7 +38,6 @@ const Wrapper = styled.div`
   height: 100%;
   display: flex;
   background-color: #faca52;
-  overflow: hidden;
 `;
 
 const Inner = styled.div`

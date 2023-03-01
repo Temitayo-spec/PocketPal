@@ -1,31 +1,34 @@
 import styled from 'styled-components';
+import ParallaxText from '../General/ParallaxText';
 
 const ProductDisp = () => {
   return (
     <Wrapper>
       <Inner>
-        <Content>
-          <Text>
-            <h2>In corporation with over 100 companies</h2>
-          </Text>
-          <CompanyContainer>
-            <Company>
-              <h2>Facebook</h2>
-            </Company>
-            <Company>
-              <h2>Google</h2>
-            </Company>
-            <Company>
-              <h2>Twitter</h2>
-            </Company>
-            <Company>
-              <h2>Kuda</h2>
-            </Company>
-            <Company>
-              <h2>Opay</h2>
-            </Company>
-          </CompanyContainer>
-        </Content>
+        <ParallaxText baseVelocity={2}>
+          <Content>
+            <Text>
+              <h2>In corporation with over 100 companies</h2>
+            </Text>
+            <CompanyContainer>
+              <Company>
+                <h2>Facebook</h2>
+              </Company>
+              <Company>
+                <h2>Google</h2>
+              </Company>
+              <Company>
+                <h2>Twitter</h2>
+              </Company>
+              <Company>
+                <h2>Kuda</h2>
+              </Company>
+              <Company>
+                <h2>Opay</h2>
+              </Company>
+            </CompanyContainer>
+          </Content>
+        </ParallaxText>
       </Inner>
     </Wrapper>
   );
@@ -35,9 +38,12 @@ export default ProductDisp;
 
 const Wrapper = styled.div`
   width: 100%;
-  height: 100%;
+  height: 20vh;
   display: flex;
   background-color: #faca52;
+  display: flex;
+  align-items: center;
+  justify-content: center;
 `;
 
 const Inner = styled.div`
@@ -49,11 +55,11 @@ const Inner = styled.div`
   padding: 2% 0 0 0;
   position: relative;
   background: #e6e6fa;
-  height: 144px;
   border: 3px solid #1e1e1e;
   transform: rotate(-1deg);
   margin-right: -10%;
-  margin-left: -1%;
+  margin-left: -10%;
+  z-index: 20;
 
   @media (max-width: 768px) {
     flex-direction: column;
@@ -68,6 +74,7 @@ const Content = styled.div`
   align-items: center;
   justify-content: space-between;
   padding: 0 2%;
+  margin-top: -20px;
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;

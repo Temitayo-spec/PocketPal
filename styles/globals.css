@@ -34,3 +34,19 @@ a {
 ::-webkit-scrollbar-thumb:hover {
   background: #555;
 }
+
+
+.parallax {
+
+}
+
+.parallax .scroller {
+  display: flex;
+  white-space: nowrap;
+  display: flex;
+  flex-wrap: nowrap;
+}
+
+.parallax span {
+  margin-right: 30px;
+}

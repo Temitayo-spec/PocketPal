@@ -35,11 +35,6 @@ a {
   background: #555;
 }
 
-
-.parallax {
-
-}
-
 .parallax .scroller {
   display: flex;
   white-space: nowrap;

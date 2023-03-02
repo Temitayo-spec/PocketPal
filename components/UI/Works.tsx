@@ -139,6 +139,11 @@ const Header = styled.div`
   align-self: flex-start;
   gap: 0.5em;
   margin-bottom: 2em;
+
+  @media (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+  }
 `;
 
 const H1 = styled.h1`
@@ -146,6 +151,10 @@ const H1 = styled.h1`
   font-weight: var(--font-weight-semi-bold);
   font-size: var(--font-size-xxxl);
   line-height: 39px;
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size-xxl);
+  }
 `;
 
 const P = styled.p`
@@ -154,6 +163,12 @@ const P = styled.p`
   font-size: var(--font-size-xl);
   line-height: 26px;
   color: var(--color-tertiary);
+  position: relative;
+  z-index: 2;
+
+  @media (max-width: 768px) {
+    font-size: var(--font-size-lg);
+  }
 `;
 
 const Content = styled.div``;
@@ -162,6 +177,11 @@ const CardContainer = styled.div`
   display: flex;
   align-items: center;
   gap: 3em;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+  }
 `;
 
 const LHS = styled.div`
@@ -204,6 +224,13 @@ const LHSCard = styled.div`
   &:hover::after {
     top: 0;
     left: 0;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
   }
 `;
 
@@ -249,10 +276,26 @@ const RHSCard = styled.div`
       border-radius: 25px;
       z-index: -1;
     }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      gap: 1em;
+      padding: 1em;
+      height: 100%;
+    }
   }
 
   &:hover::after {
     top: 0;
     left: 0;
+  }
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    align-items: center;
+    gap: 1em;
+    padding: 1em;
+    height: 100%;
   }
 `;

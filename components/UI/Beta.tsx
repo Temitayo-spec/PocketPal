@@ -41,6 +41,10 @@ const Wrapper = styled.div`
   background: #8db1fd;
   align-items: center;
   justify-content: center;
+
+  @media (max-width: 768px) {
+    height: 15vh;
+  }
 `;
 
 const Inner = styled.div`
@@ -62,6 +66,20 @@ const DIV = styled.div`
   display: flex;
   align-items: center;
   margin: 0 1em;
+  padding: 0.5em 0;
+
+  & > img {
+    width: 2.5rem;
+    height: 2.5rem;
+    margin: 0 0.5em;
+  }
+
+  @media (max-width: 768px) {
+    & > img {
+      width: 0.8rem;
+      height: 0.8rem;
+    }
+  }
 `;
 
 const H2 = styled.h2`
@@ -70,6 +88,10 @@ const H2 = styled.h2`
   font-size: 2.5rem;
   color: #1e1e1e;
   margin: 0 1em;
+
+  @media (max-width: 768px) {
+    font-size: 1.75rem;
+  }
 `;
 
 const P = styled.p`
@@ -78,4 +100,9 @@ const P = styled.p`
   font-size: 1.75rem;
   color: #1e1e1e;
   margin: 0 1em;
+
+  @media (max-width: 768px) {
+    font-size: 1.25rem;
+    padding: 1em 0;
+  }
 `;

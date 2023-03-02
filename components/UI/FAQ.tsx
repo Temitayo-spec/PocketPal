@@ -73,6 +73,10 @@ const Inner = styled.div`
   justify-content: space-between;
   width: 90%;
   margin: 0 auto;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+  }
 `;
 
 const LHS = styled.div`
@@ -87,6 +91,26 @@ const LHS = styled.div`
     font-weight: var(--font-weight-semi-bold);
     font-family: var(--font-family-clash-display);
     color: var(--color--tertiary);
+
+    @media (max-width: 768px) {
+      font-size: var(--font-size-xxl);
+    }
+  }
+
+  img {
+    align-self: flex-end;
+    object-fit: contain;
+  }
+
+  @media (max-width: 768px) {
+    width: 100%;
+    align-items: center;
+  }
+
+  @media (max-width: 425px) {
+    img {
+      width: 100%;
+    }
   }
 `;
 
@@ -96,6 +120,13 @@ const RHS = styled.div`
   width: 50%;
   height: 100%;
   gap: 8em;
+
+  @media (max-width: 768px) {
+    margin-top: 1em;
+    width: 100%;
+    align-items: center;
+    gap: 4em;
+  }
 `;
 
 const Div = styled.div`
@@ -108,6 +139,10 @@ const Div = styled.div`
   img {
     align-self: flex-end;
     object-fit: contain;
+
+    @media (max-width: 768px) {
+      align-self: center;
+    }
   }
 
   div {
@@ -122,6 +157,10 @@ const Div = styled.div`
       font-weight: var(--font-weight-medium);
       font-family: var(--font-family-lufga);
       color: var(--color--tertiary);
+
+      @media (max-width: 768px) {
+        font-size: var(--font-size-md);
+      }
     }
 
     p {
@@ -129,6 +168,10 @@ const Div = styled.div`
       font-weight: var(--font-weight-medium);
       font-family: var(--font-family-lufga);
       color: var(--color--tertiary);
+
+      @media (max-width: 768px) {
+        font-size: var(--font-size-sm);
+      }
     }
   }
 `;

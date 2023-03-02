@@ -103,6 +103,8 @@ const P = styled.p`
   font-size: var(--font-size-xl);
   line-height: var(--line-height-xl);
   text-align: center;
+  position: relative;
+  z-index: 4;
   @media (max-width: 768px) {
     font-size: 1rem;
     padding: 0;

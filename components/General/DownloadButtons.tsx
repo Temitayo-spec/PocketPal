@@ -77,6 +77,10 @@ const ButtonInner = styled.div`
       background: #cefe20;
     }
   }
+
+  @media (max-width: 768px) {
+    margin: 0.2rem;
+  }
 `;
 
 const Button = styled.button`
@@ -91,6 +95,11 @@ const Button = styled.button`
   z-index: 1;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
+
+  @media (max-width: 768px) {
+    padding: 0.5rem 0.2rem;
+    width: 100%;
+  }
 `;
 
 const Text = styled.div`

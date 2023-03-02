@@ -34,8 +34,10 @@ const Wrapper = styled.div`
   border: 4px solid #1e1e1e;
   border-radius: 25px;
   @media (max-width: 768px) {
+    width: 95%;
     flex-direction: column;
     padding: 0 2%;
+    overflow: hidden;
   }
 `;
 
@@ -59,6 +61,7 @@ const LHS = styled.div`
   gap: 2em;
   @media (max-width: 768px) {
     width: 100%;
+    padding: 2em 0;
   }
   h1 {
     font-size: var(--font-size-xxxl);
@@ -93,5 +96,9 @@ justify-content: flex-end;
   }
   img {
     object-fit: contain;
+
+    @media (max-width: 768px) {
+      width: 70%;
+    }
   }
 `;

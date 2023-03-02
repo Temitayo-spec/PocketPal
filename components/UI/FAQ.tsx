@@ -60,7 +60,7 @@ const Wrapper = styled.section`
   background: #fce37a;
   position: relative;
   height: 100%;
-  padding: 4em 0;
+  padding: 4em 0 15em;
 
   hr {
     border: 1px solid #1e1e1e;
@@ -95,7 +95,7 @@ const RHS = styled.div`
   flex-direction: column;
   width: 50%;
   height: 100%;
-  gap: 4em;
+  gap: 8em;
 `;
 
 const Div = styled.div`

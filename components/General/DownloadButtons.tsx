@@ -45,7 +45,6 @@ export default DownloadButtons;
 const ButtonContainer = styled.div`
   flex: 1;
   display: flex;
-  justify-content: flex-end;
   position: relative;
 `;
 

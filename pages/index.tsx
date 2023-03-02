@@ -1,3 +1,4 @@
+import Available from '@/components/UI/Available';
 import Beta from '@/components/UI/Beta';
 import Enhanced from '@/components/UI/Enhanced';
 import FAQ from '@/components/UI/FAQ';
@@ -33,6 +34,7 @@ export default function Home() {
         <Beta />
         <Testimonials />
         <FAQ />
+        <Available />
       </main>
     </>
   );

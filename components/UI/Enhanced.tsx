@@ -128,6 +128,7 @@ const Card = styled.div`
   border-radius: 25px;
   padding: 2em;
   position: relative;
+  cursor: pointer;
 
   h2 {
     font-family: var(--font-family-clash-display);

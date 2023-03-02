@@ -20,7 +20,9 @@ const Hero = () => {
             <span>Download the app now and take control of your finances</span>
           </P>
         </Header>
-        <DownloadButtons />
+        <div>
+          <DownloadButtons />
+        </div>
         <ImageContainer>
           <Image
             src="/images/half-phone.png"
@@ -57,6 +59,10 @@ const Inner = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
+  & > div {
+    margin: 0.5em 0 2em;
+  }
 
   @media (max-width: 768px) {
     flex-direction: column;

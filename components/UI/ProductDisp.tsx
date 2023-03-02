@@ -60,11 +60,6 @@ const Inner = styled.div`
   margin-right: -10%;
   margin-left: -10%;
   z-index: 20;
-
-  @media (max-width: 768px) {
-    flex-direction: column;
-    padding: 0 2%;
-  }
 `;
 
 const Content = styled.div`
@@ -73,12 +68,8 @@ const Content = styled.div`
   display: flex;
   align-items: center;
   justify-content: space-between;
-  padding: 0 2%;
+  padding: 1%;
   margin-top: -20px;
-  @media (max-width: 768px) {
-    flex-direction: column;
-    align-items: center;
-  }
 `;
 
 const Text = styled.div`
@@ -127,5 +118,7 @@ const Company = styled.div`
   }
   @media (max-width: 768px) {
     width: 40%;
+    height: 100%;
+    padding: 1em 2em;
   }
 `;

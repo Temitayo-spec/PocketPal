@@ -137,7 +137,7 @@ const Nav = styled.nav`
       flex-direction: column;
       align-items: center;
       position: absolute;
-      z-index: 1;
+      z-index: 20;
       top: 80px;
       left: 50%;
       width: 90%;

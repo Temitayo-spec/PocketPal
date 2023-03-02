@@ -57,6 +57,7 @@ const Inner = styled.div`
   flex-direction: column;
   justify-content: space-between;
   align-items: center;
+
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
@@ -98,6 +99,7 @@ const P = styled.p`
   text-align: center;
   @media (max-width: 768px) {
     font-size: 1rem;
+    padding: 0;
   }
 `;
 

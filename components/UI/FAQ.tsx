@@ -98,7 +98,6 @@ const LHS = styled.div`
   }
 
   img {
-    align-self: flex-end;
     object-fit: contain;
   }
 

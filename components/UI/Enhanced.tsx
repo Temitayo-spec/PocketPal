@@ -1,21 +1,25 @@
 import styled from 'styled-components';
+import { motion } from 'framer-motion';
+import { card, item } from '@/utils/motionVariants';
 
 const Enhanced = () => {
   return (
     <Wrapper>
       <Inner>
-        <Header>
-          <h1>Enhanced financial journey at every step</h1>
-          <p>
+        <Header initial="hidden" whileInView="visible" variants={item}>
+          <motion.h1 variants={item}>
+            Enhanced financial journey at every step
+          </motion.h1>
+          <motion.p>
             Our platform provides personalized financial guidance, tailored
             notifications, optimized security measures, and virtual
             consultations with experts. We’re committed to enhancing your
             financial journey at every step, so you can achieve your goals with
             ease
-          </p>
+          </motion.p>
         </Header>
-        <CardContainer>
-          <Card>
+        <CardContainer initial="hidden" whileInView="visible" variants={card}>
+          <Card variants={card}>
             <h2>Marketing</h2>
             <p>
               Stay in the know with our marketing messages. We’ll keep you
@@ -23,7 +27,7 @@ const Enhanced = () => {
               insider tips to help you reach your goals.
             </p>
           </Card>
-          <Card>
+          <Card variants={card}>
             <h2>Customer Support</h2>
             <p>
               Get instant support with our push notifications. Whether you need
@@ -32,7 +36,7 @@ const Enhanced = () => {
               away.
             </p>
           </Card>
-          <Card>
+          <Card variants={card}>
             <h2>Account Security</h2>
             <p>
               Stay Informed with our delivery alerts. We’ll keep you in the loop
@@ -40,7 +44,7 @@ const Enhanced = () => {
               finances and detect any fraudulent activity.
             </p>
           </Card>
-          <Card>
+          <Card variants={card}>
             <h2>Sales</h2>
             <p>
               Stay up-to-date with our app updates. We’re constantly improving
@@ -74,7 +78,7 @@ const Inner = styled.div`
   align-items: center;
 `;
 
-const Header = styled.div`
+const Header = styled(motion.div)`
   width: 100%;
   height: 100%;
   display: flex;
@@ -112,7 +116,7 @@ const Header = styled.div`
   }
 `;
 
-const CardContainer = styled.div`
+const CardContainer = styled(motion.div)`
   width: 80%;
   height: 100%;
   display: grid;
@@ -130,7 +134,7 @@ const CardContainer = styled.div`
   }
 `;
 
-const Card = styled.div`
+const Card = styled(motion.div)`
   width: 100%;
   height: 100%;
   display: flex;

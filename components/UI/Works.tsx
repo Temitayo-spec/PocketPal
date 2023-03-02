@@ -5,6 +5,9 @@ import frameTwo from '../../public/images/frame_2.png';
 import frameThree from '../../public/images/frame_3.png';
 import star from '../../public/images/star.png';
 
+import { motion } from 'framer-motion';
+import { item } from '@/utils/motionVariants';
+
 const Works = () => {
   return (
     <Wrapper>
@@ -16,8 +19,8 @@ const Works = () => {
         <Image src={star} alt="star" />
       </Decor>
       <Inner>
-        <Header>
-          <H1>How PocketPal works</H1>
+        <Header initial="hidden" whileInView="visible" variants={item}>
+          <H1 variants={item}>How PocketPal works</H1>
           <P>
             PocketPal simplifies the process and makes it easy for you to
             achieve your goals. Just sign up, set your savings target, and let
@@ -132,7 +135,7 @@ const Inner = styled.div`
   }
 `;
 
-const Header = styled.div`
+const Header = styled(motion.div)`
   width: 80%;
   display: flex;
   flex-direction: column;
@@ -146,7 +149,7 @@ const Header = styled.div`
   }
 `;
 
-const H1 = styled.h1`
+const H1 = styled(motion.h1)`
   font-family: var(--font-family-clash-display);
   font-weight: var(--font-weight-semi-bold);
   font-size: var(--font-size-xxxl);
@@ -157,7 +160,7 @@ const H1 = styled.h1`
   }
 `;
 
-const P = styled.p`
+const P = styled(motion.p)`
   font-family: var(--font-family-lufga);
   font-weight: var(--font-weight-medium);
   font-size: var(--font-size-xl);

@@ -3,26 +3,34 @@ import React from 'react';
 import styled from 'styled-components';
 import DownloadButtons from '../General/DownloadButtons';
 import HeroDecor from './HeroDecor';
+import { motion } from 'framer-motion';
+import { item, container } from '@/utils/motionVariants';
 
 const Hero = () => {
   return (
     <Wrapper>
       <HeroDecor />
       <Inner>
-        <Header>
-          <H1>
+        <Header initial="hidden" whileInView="visible" variants={container}
+          viewport={{once: true, amount: 0.5}}
+        >
+          <H1
+            variants={item}
+          >
             Take control of your finances with our <span>Budgeting</span> tool
           </H1>
-          <P>
+          <P
+            variants={item}
+          >
             Set a budget, track your spending, and reach your financial goals
             with our easy-to-use budgeting app. Get alerts as you approach your
             budget limits and stsy on track to financial freedom.{' '}
             <span>Download the app now and take control of your finances</span>
           </P>
         </Header>
-        <div>
+        <Div>
           <DownloadButtons />
-        </div>
+        </Div>
         <ImageContainer>
           <Image
             src="/images/half-phone.png"
@@ -60,17 +68,17 @@ const Inner = styled.div`
   justify-content: space-between;
   align-items: center;
 
-  & > div {
-    margin: 0.5em 0 2em;
-  }
-
   @media (max-width: 768px) {
     flex-direction: column;
     align-items: center;
   }
 `;
 
-const Header = styled.div`
+const Div = styled.div`
+  margin: 0.5em 0 2em;
+`;
+
+const Header = styled(motion.div)`
   flex: 1;
   padding: 0 2%;
   @media (max-width: 768px) {
@@ -78,7 +86,7 @@ const Header = styled.div`
   }
 `;
 
-const H1 = styled.h1`
+const H1 = styled(motion.h1)`
   font-family: var(--font-family-clash-display);
   font-weight: var(--font-weight-semi-bold);
   font-size: 3.1rem; // 50px
@@ -94,7 +102,7 @@ const H1 = styled.h1`
   }
 `;
 
-const P = styled.p`
+const P = styled(motion.p)`
   display: flex;
   flex-direction: column;
   padding: 0 2em;
@@ -116,6 +124,7 @@ const ImageContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   margin-top: 2rem;
+  margin-bottom: 0;
   @media (max-width: 768px) {
     display: none;
   }

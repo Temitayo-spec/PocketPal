@@ -1,3 +1,4 @@
+import Beta from '@/components/UI/Beta';
 import Enhanced from '@/components/UI/Enhanced';
 import Hero from '@/components/UI/Hero';
 import Navbar from '@/components/UI/Navbar';
@@ -27,6 +28,7 @@ export default function Home() {
         <ProductDisp />
         <Works />
         <Enhanced />
+        <Beta />
       </main>
     </>
   );

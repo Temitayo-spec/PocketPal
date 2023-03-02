@@ -35,6 +35,11 @@ a {
   background: #555;
 }
 
+.parallax {
+  display: flex;
+  align-items: center;
+}
+
 .parallax .scroller {
   display: flex;
   white-space: nowrap;
@@ -43,5 +48,6 @@ a {
 }
 
 .parallax span {
+  display: inline-flex;
   margin-right: 30px;
 }

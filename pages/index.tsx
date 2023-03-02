@@ -1,8 +1,10 @@
 import Beta from '@/components/UI/Beta';
 import Enhanced from '@/components/UI/Enhanced';
+import FAQ from '@/components/UI/FAQ';
 import Hero from '@/components/UI/Hero';
 import Navbar from '@/components/UI/Navbar';
 import ProductDisp from '@/components/UI/ProductDisp';
+import Testimonials from '@/components/UI/Testimonials';
 import Works from '@/components/UI/Works';
 import Head from 'next/head';
 import styled from 'styled-components';
@@ -29,6 +31,8 @@ export default function Home() {
         <Works />
         <Enhanced />
         <Beta />
+        <Testimonials />
+        <FAQ />
       </main>
     </>
   );

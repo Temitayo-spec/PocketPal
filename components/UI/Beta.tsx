@@ -54,6 +54,8 @@ const Inner = styled.div`
   border: 3px solid #1e1e1e;
   margin-right: -10%;
   margin-left: -10%;
+  position: relative;
+  z-index: 1;
 `;
 
 const DIV = styled.div`

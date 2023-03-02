@@ -1,0 +1,11 @@
+export { default as Available } from './Available';
+export { default as Beta } from './Beta';
+export { default as Enhanced } from './Enhanced';
+export { default as FAQ } from './FAQ';
+export { default as Footer } from './Footer';
+export { default as Hero } from './Hero';
+export { default as HeroDecor } from './HeroDecor';
+export { default as Navbar } from './Navbar';
+export { default as ProductDisp } from './ProductDisp';
+export { default as Testimonials } from './Testimonials';
+export { default as Works } from './Works';

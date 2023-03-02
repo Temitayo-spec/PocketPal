@@ -1,13 +1,4 @@
-import Available from '@/components/UI/Available';
-import Beta from '@/components/UI/Beta';
-import Enhanced from '@/components/UI/Enhanced';
-import FAQ from '@/components/UI/FAQ';
-import Footer from '@/components/UI/Footer';
-import Hero from '@/components/UI/Hero';
-import Navbar from '@/components/UI/Navbar';
-import ProductDisp from '@/components/UI/ProductDisp';
-import Testimonials from '@/components/UI/Testimonials';
-import Works from '@/components/UI/Works';
+import { Available, Beta, Enhanced, FAQ, Footer, Hero, Navbar, ProductDisp, Testimonials, Works } from '@/components/UI';
 import Head from 'next/head';
 import styled from 'styled-components';
 

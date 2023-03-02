@@ -3,13 +3,23 @@ import styled from 'styled-components';
 import Link from 'next/link';
 
 const Navbar = () => {
+  const [toggle, setToggle] = React.useState(false);
   return (
     <Wrapper>
       <Inner>
         <Logo>
           <H3>PocketPal</H3>
+          <Burger
+            onClick={() => {
+              setToggle(!toggle);
+            }}
+          >
+            <div></div>
+            <div></div>
+            <div></div>
+          </Burger>
         </Logo>
-        <Nav>
+        <Nav className={toggle ? 'active' : ''}>
           <ul>
             <li>
               <Link href="/">Home</Link>
@@ -25,7 +35,7 @@ const Navbar = () => {
             </li>
           </ul>
         </Nav>
-        <ButtonContainer>
+        <ButtonContainer className={toggle ? 'active' : ''}>
           <ButtonInner>
             <Button>Download App</Button>
             <div></div>
@@ -49,10 +59,43 @@ const Inner = styled.div`
   justify-content: space-between;
   align-items: center;
   height: 80px;
+
+  @media (max-width: 768px) {
+    flex-direction: column;
+    height: auto;
+  }
 `;
 
 const Logo = styled.div`
   flex: 1;
+
+  @media (max-width: 768px) {
+    padding: 20px 0;
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+  }
+`;
+
+const Burger = styled.div`
+  display: none;
+
+  div {
+    width: 30px;
+    height: 3px;
+    background: var(--color-tertiary);
+    margin: 5px;
+    transition: all 0.3s ease-in-out;
+    border-radius: 5px;
+  }
+
+  @media (max-width: 768px) {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    cursor: pointer;
+  }
 `;
 
 const H3 = styled.h3`
@@ -65,11 +108,13 @@ const H3 = styled.h3`
 
 const Nav = styled.nav`
   flex: 2;
+  transition: visibility opacity 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   ul {
     display: flex;
     list-style: none;
     justify-content: space-between;
     width: 100%;
+    position: relative;
     li {
       a {
         font-family: var(--font-family-lufga);
@@ -88,6 +133,39 @@ const Nav = styled.nav`
         }
       }
     }
+
+    @media (max-width: 768px) {
+      flex-direction: column;
+      align-items: center;
+      position: absolute;
+      z-index: 1;
+      top: 80px;
+      left: 50%;
+      width: 90%;
+      transform: translateX(-50%);
+      background: var(--color-orange);
+      border: 2px solid var(--color-tertiary);
+      border-radius: 20px;
+      padding: 2em 2em 6em 2em;
+      li {
+        margin-top: 20px;
+
+        a {
+          color: var(--color-secondary);
+        }
+      }
+    }
+  }
+
+  @media (max-width: 768px) {
+    margin-top: 20px;
+    visibility: hidden;
+    opacity: 0;
+
+    &.active {
+      visibility: visible;
+      opacity: 1;
+    }
   }
 `;
 
@@ -96,6 +174,17 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   position: relative;
+
+  @media (max-width: 768px) {
+    top: 200px;
+    opacity: 0;
+    visibility: hidden;
+  }
+
+  &.active {
+    opacity: 1;
+    visibility: visible;
+  }
 `;
 
 const ButtonInner = styled.div`

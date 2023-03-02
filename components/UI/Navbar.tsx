@@ -188,7 +188,7 @@ const ButtonContainer = styled.div`
 
 const ButtonInner = styled.div`
   position: relative;
-  z-index: 2;
+  z-index: 20;
 
   div {
     position: absolute;
@@ -221,7 +221,7 @@ const Button = styled.button`
   line-height: var(--font-line-height-xl);
   color: var(--color-tertiary);
   position: relative;
-  z-index: 1;
+  z-index: 20;
   cursor: pointer;
   transition: all 0.3s ease-in-out;
 `;

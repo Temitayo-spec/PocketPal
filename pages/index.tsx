@@ -2,6 +2,7 @@ import Available from '@/components/UI/Available';
 import Beta from '@/components/UI/Beta';
 import Enhanced from '@/components/UI/Enhanced';
 import FAQ from '@/components/UI/FAQ';
+import Footer from '@/components/UI/Footer';
 import Hero from '@/components/UI/Hero';
 import Navbar from '@/components/UI/Navbar';
 import ProductDisp from '@/components/UI/ProductDisp';
@@ -35,6 +36,7 @@ export default function Home() {
         <Testimonials />
         <FAQ />
         <Available />
+        <Footer />
       </main>
     </>
   );

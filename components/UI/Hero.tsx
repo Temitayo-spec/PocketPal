@@ -125,10 +125,15 @@ const ImageContainer = styled.div`
   margin-top: 2rem;
   margin-bottom: 0;
   @media (max-width: 768px) {
-    display: none;
+    width: 90%;
+    margin: 0 auto -3rem;
   }
 
   img {
     object-fit: contain;
+
+    @media (max-width: 768px) {
+      width: 100%;
+    }
   }
 `;

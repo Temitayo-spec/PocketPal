@@ -97,7 +97,7 @@ const Decor = styled.div`
       transform: translateX(-50%);
 
       @media (max-width: 768px) {
-        top: 20%;
+        top: 45%;
         left: 0%;
       }
     }

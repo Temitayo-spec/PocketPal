@@ -124,6 +124,8 @@ const ImageContainer = styled.div`
   justify-content: flex-end;
   margin-top: 2rem;
   margin-bottom: 0;
+  position: relative;
+  z-index: 3;
   @media (max-width: 768px) {
     width: 90%;
     margin: 0 auto -3rem;

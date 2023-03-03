@@ -11,17 +11,16 @@ const Hero = () => {
     <Wrapper>
       <HeroDecor />
       <Inner>
-        <Header initial="hidden" whileInView="visible" variants={container}
-          viewport={{once: true, amount: 0.5}}
+        <Header
+          initial="hidden"
+          whileInView="visible"
+          variants={container}
+          viewport={{ once: true, amount: 0.5 }}
         >
-          <H1
-            variants={item}
-          >
+          <H1 variants={item}>
             Take control of your finances with our <span>Budgeting</span> tool
           </H1>
-          <P
-            variants={item}
-          >
+          <P variants={item}>
             Set a budget, track your spending, and reach your financial goals
             with our easy-to-use budgeting app. Get alerts as you approach your
             budget limits and stsy on track to financial freedom.{' '}

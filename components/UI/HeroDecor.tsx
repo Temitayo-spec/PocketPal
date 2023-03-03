@@ -1,50 +1,59 @@
 import Image from 'next/image';
 import styled from 'styled-components';
+import top_left_cross from '../../public/images/top-left-cross.png';
+import star from '../../public/images/star.png';
+import top_left_flash from '../../public/images/top-left-flash.png';
+import star_blue from '../../public/images/star-blue.png';
+import top_right_cross from '../../public/images/top-right-cross.png';
+import star_orange from '../../public/images/star-orange.png';
+import star_outline from '../../public/images/star-outline.png';
+import bread from '../../public/images/bread.png';
+import bottom_right_flash from '../../public/images/bottom-right-flash.png';
+
 
 const HeroDecor = () => {
   return (
     <Decor>
       <Image
-        src="/images/top-left-cross.png"
+        src={top_left_cross}
         alt="hero decor"
         width={35}
         height={70}
       />
-      <Image src="/images/star.png" alt="hero decor" width={50} height={50} />
+      <Image src={star} alt="hero decor" width={50} height={50} />
       <Image
-        src="/images/top-left-flash.png"
+        src={top_left_flash}
         alt="hero decor"
         width={30}
         height={50}
       />
-      <Image src="/images/star.png" alt="hero decor" width={50} height={50} />
+      <Image src={star} alt="hero decor" width={50} height={50} />
       <Image
-        src="/images/star-blue.png"
+        src={star_blue}
         alt="hero decor"
         width={50}
         height={50}
       />
       <Image
-        src="/images/top-right-cross.png"
+        src={top_right_cross}
         alt="hero decor"
         width={25}
         height={50}
       />
       <Image
-        src="/images/star-orange.png"
+        src={star_orange}
+        alt="hero decor"
+     
+      />
+      <Image
+        src={star_outline}
         alt="hero decor"
         width={50}
         height={50}
       />
+      <Image src={bread} alt="hero decor" width={50} height={50} />
       <Image
-        src="/images/star-outline.png"
-        alt="hero decor"
-        width={50}
-        height={50}
-      />
-      <Image src="/images/bread.png" alt="hero decor" width={50} height={50} />
-      <Image
-        src="/images/bottom-right-flash.png"
+        src={bottom_right_flash}
         alt="hero decor"
         width={50}
         height={34}
@@ -86,6 +95,11 @@ const Decor = styled.div`
       top: 60%;
       left: 20%;
       transform: translateX(-50%);
+
+      @media (max-width: 768px) {
+        top: 20%;
+        left: 0%;
+      }
     }
 
     &:nth-child(6) {
@@ -108,6 +122,11 @@ const Decor = styled.div`
     &:nth-child(9) {
       top: 60%;
       right: 28%;
+
+      @media (max-width: 768px) {
+        top: 56%;
+        right: 0%;
+      }
     }
 
     &:nth-child(10) {

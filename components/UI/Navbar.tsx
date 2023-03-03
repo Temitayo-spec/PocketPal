@@ -19,8 +19,8 @@ const Navbar = () => {
             <div></div>
           </Burger>
         </Logo>
-        <Nav className={toggle ? 'active' : ''}>
-          <ul>
+        <Nav>
+          <ul className={toggle ? 'active' : ''}>
             <li>
               <Link href="/">Home</Link>
             </li>
@@ -143,9 +143,7 @@ const Nav = styled.nav`
       width: 90%;
       transform: translateX(-50%);
       background: var(--color-orange);
-      border: 2px solid var(--color-tertiary);
       border-radius: 20px;
-      padding: 2em 2em 6em 2em;
       li {
         margin-top: 20px;
 
@@ -153,18 +151,22 @@ const Nav = styled.nav`
           color: var(--color-secondary);
         }
       }
+      max-height: 0;
+      overflow: hidden;
+      padding: 0;
+      transition: all 0.8s cubic-bezier(0.175, 0.885, 0.32, 1.275);
+      border: none;
+
+      &.active {
+        max-height: 100%;
+        padding: 2em 2em 6em 2em;
+        border: 2px solid var(--color-tertiary);
+      }
     }
   }
 
   @media (max-width: 768px) {
     margin-top: 20px;
-    visibility: hidden;
-    opacity: 0;
-
-    &.active {
-      visibility: visible;
-      opacity: 1;
-    }
   }
 `;
 
@@ -173,16 +175,18 @@ const ButtonContainer = styled.div`
   display: flex;
   justify-content: flex-end;
   position: relative;
+  z-index: 20;
 
   @media (max-width: 768px) {
     top: 200px;
     opacity: 0;
-    visibility: hidden;
+    transform: translateY(-50%);
+    transition: all 0.3s cubic-bezier(0.175, 0.885, 0.32, 1.275);
   }
 
   &.active {
+    transform: translateY(0);
     opacity: 1;
-    visibility: visible;
   }
 `;
 

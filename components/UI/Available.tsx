@@ -1,7 +1,7 @@
 import styled from 'styled-components';
 import DownloadButtons from '../General/DownloadButtons';
-import available_1 from '../../public/images/available_1.png';
-import available_2 from '../../public/images/available_2.png';
+import available_1 from '../../public/svgs/available_1.svg';
+import available_2 from '../../public/svgs/available_2.svg';
 import Image from 'next/image';
 
 const Available = () => {
@@ -14,8 +14,8 @@ const Available = () => {
         </LHS>
         <RHS>
           <ImageContainer>
-            <Image src={available_1} alt="hero image" />
             <Image src={available_2} alt="hero image" />
+            <Image src={available_1} alt="hero image" />
           </ImageContainer>
         </RHS>
       </Inner>
@@ -69,6 +69,7 @@ const LHS = styled.div`
     font-family: var(--font-family-clash-display);
     @media (max-width: 768px) {
       font-size: var(--font-size-xxl);
+      text-align: center;
     }
   }
 `;

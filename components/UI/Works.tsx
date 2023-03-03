@@ -1,10 +1,9 @@
 import Image from 'next/image';
 import styled from 'styled-components';
-import frameOne from '../../public/images/frame_1.png';
-import frameTwo from '../../public/images/frame_2.png';
-import frameThree from '../../public/images/frame_3.png';
+import frameOne from '../../public/svgs/works_1.svg';
+import frameTwo from '../../public/svgs/works_2.svg';
+import frameThree from '../../public/svgs/works_3.svg';
 import star from '../../public/images/star.png';
-
 import { motion } from 'framer-motion';
 import { item } from '@/utils/motionVariants';
 

@@ -99,6 +99,15 @@ const LHS = styled.div`
 
   img {
     object-fit: contain;
+
+    @media (max-width: 768px) {
+      width: 100%;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      z-index: 0;
+    }
   }
 
   @media (max-width: 768px) {

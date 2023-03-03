@@ -69,8 +69,8 @@ const DIV = styled.div`
   padding: 0.5em 0;
 
   & > img {
-    width: 2.5rem;
-    height: 2.5rem;
+    width: 1rem;
+    height: 1rem;
     margin: 0 0.5em;
   }
 

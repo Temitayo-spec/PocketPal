@@ -166,7 +166,7 @@ const Div = styled.div`
     left: 95%;
 
     @media (max-width: 768px) {
-      left: 90%;
+      left: 84%;
     }
   }
 
@@ -178,7 +178,7 @@ const Div = styled.div`
   @media (max-width: 768px) {
     width: 50px;
     height: 50px;
-    left: -10px;
+    left: 5px;
   }
 `;
 

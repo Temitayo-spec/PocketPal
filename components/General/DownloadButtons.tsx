@@ -46,6 +46,13 @@ const ButtonContainer = styled.div`
   flex: 1;
   display: flex;
   position: relative;
+
+  @media (max-width: 768px) {
+    align-items: center;
+    justify-content: center;
+    gap: 1rem;
+    width: 100%;
+  }
 `;
 
 const ButtonInner = styled.div`
@@ -97,7 +104,7 @@ const Button = styled.button`
   transition: all 0.3s ease-in-out;
 
   @media (max-width: 768px) {
-    padding: 0.5rem 0.2rem;
+    padding: 0.5rem 0.5rem;
     width: 100%;
   }
 `;
@@ -112,4 +119,11 @@ const Text = styled.div`
   font-size: var(--font-size-lg);
   color: var(--color-tertiary);
   text-align: left;
+
+  @media (max-width: 768px) {
+    span {
+      font-size: 6px;
+    }
+    font-size: var(--font-size-sm);
+  }
 `;
